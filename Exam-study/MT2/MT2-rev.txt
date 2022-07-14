@@ -1,0 +1,75 @@
+F(w)*H(w) = Y(w)
+    LTI systems can only "destroy" frequencies, never create new frequencies
+    LTI systems can have 2 different frequency inputs (A and B), but only 1 frequency in the output (A)
+        because you must have H(B) = 0
+
+Categorize filters by
+    amplitude-frequency graphs
+    phase-frequency graphs ?
+    |H(ω|
+    <H(ω∞)
+    limit at inifnity
+    add pi in Q2, subrtact pi in Q3 bc of angle of complex num = Im/Re, yet Q1 and Q4 don't need a phase change
+        H(ω) = sqrt(H(ω) * conjugateH(ω))
+        <H(ω) = arctan[ (Im(H(ω))) / (Re(H(ω∞))) ]
+
+Steps to find a filter
+    scaling input
+    evaluate |H(ω)| at 0, ∞, and in between
+
+Conceptual Example
+    Linear system has freq. response:
+        H(ω) = e ^jω
+        input : x(t) = 3sin(3t -3) +3
+
+            x(t) = 3cos(3t - 3 - π/2) + 3cos(0)
+                H(ω) = 3e ^[-j(3 + π/2)]  + 3e ^j0
+    different frequencies on inputs must be treated differently with ???
+
+remember d/dt = jω
+
+ex. ???
+    y(t) + d/dt ^5 (y) + d/dt ^2 (f) = f(t) - dy/dt
+
+    y + (jw)^5 * y + (jw)^2 * f = f - jwy
+    y + w^5 * yj - w^2 * f = f * jwy
+    y(q + jw^5 + jw) = f(1+ w^2)
+    H(w) = Y/F = [(1 + jw^5 + jw) / (1 + w^2)] ^ -1 
+
+sine & cosine identities expressed with oiler's number
+
+how to tell is a system and/or input is periodic
+
+complex exponentials are periodic, but purely real exponentials are not periodic
+
+lowercase letters are in time-domain, uppercase letters are in frequency-domain
+
+For fourier series
+    F0 is the average of the function
+    Gibbs Phenomenon
+    discontinuities
+    convergence
+    divergence
+    conditions for existence and usage: MUST HAVE ALL THREE
+        f(t) must be periodic and absolutly integrable
+            absolutly integrable???
+    must be a finite number of maxes and mins over one period, and a finite number of finite discontinuities over one period 
+
+phasor only has one frequency, exponentials can have many ???
+
+fourier series input, linear system: system output?
+
+skip t=0 in integration of fourier series because things get weird at 0?
+
+What frequncies you have?
+What frequencies will survive the filter?
+What frequencies will be in your final answer?
+
+Fn -> Yn
+    Fourier coefficients
+
+Y(t) is steady-state solution, not the transient
+    Dissipative systems have elements that die out, but periodic systems cannot have terms which decay
+    So these LTI systems which we consider Dissipative yet use Fourier series in only represent the steady-state solution  
+
+//

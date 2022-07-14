@@ -1,0 +1,10 @@
+>Input frequency
+	>> lab 3 design fundamental frequency ~ 15kHz
+	>> Pre-lab: For this circuit the Fourier series coefficients show only odd Harmonics #1,#2, #3, even harmonics are zero
+>ex.) input 5kHz
+	>> 1st Harmonic: ~ 5kHz, 3rd Hrmonic: ~ 15kHz, 5th Hrmonic: ~ 25kHz
+>Use Betwork Analyzer:
+	>>Magnitude graph should result in bell curve: the peak of which will be some magnitude in dB of value <0 which signifies power loss from input to output. If everything is wired correctly, the power loss and therefore bell-curve magnitude is almost 0dB
+>Use Spectrum Analyzer:
+	>>the first peak above signal noise is the 1st harmonic frequency, and you can see 3rd, 5th, and maybe even 7th. At some point the nth odd harmonic freqeuncy will so low that it is indiscernable from the signal noise (abstract mess of channel 1 input orange and channel 2 output purple mess)
+>Without Network Analyzer: Use Combined Impedance (Real Resistor Resistance + complex capacitor reactance) to determine some expression for Frequency Response ( H(w) ) as a ratio between input ( F(w) ) and output ( Y(w) )

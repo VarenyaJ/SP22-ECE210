@@ -1,0 +1,36 @@
+1. 
+	Signal Gen:
+		use 1 channel only,
+	Oscilloscope:
+		make time bias 1 ms
+		Volt Div 1 V, and position 0 for both channel 1 and 2 in oscilloscope
+		Time difference: cursor 1 to peak of wave 1, cursor 2 to peak of wave 2
+		delta t is 130.258 MicroS
+		Period = 0.00125 Sec
+			(130.358 * 10^-6 MicroSec) * (800 Hz) * 360 degrees = 37.514304degrees
+		Period = .001 Sec
+			(130.358 * 10^-6 MicroSec) * (1 kHz) * 360 degrees = 46.89288 degrees
+		Vc (purple) is lagging the Vin (orange)
+2.	time base 100 Micro Sec
+	Peak-to-peak = 4.858V = Vr
+	R = 2.2 * 10^3
+	(Vr) / R = 0.00220818181818 Amps
+	delta t = 13.166 Micro Sec
+	Period = 0.00025 Sec
+	Phase Differece = (13.166 * 10^-6 MicroSec) * (4000 Hz) * 360 degrees = 18.95904 Degrees
+	Vc leads Vin
+	Vmax Real = 921.453 mV
+	1.002 V * .37 = .37074 V
+3.	channel 2 falling edge
+	delta t from peak (1.002 V)  to 37074 V = 206.242 Micro Sec = Time Constant =  RC = t
+	theoretical time constant = 220 Micro Sec
+	% error = 6.25363636364 %
+4.	Random signal decay on linear graph after 100 kHz because of "Response Channel Voltage < 50 mV" warning
+
+	ADD DIODE: THE FOLLOWING IS NOT CORRECT
+
+5+6.	1V peak, f=13 kHz, t/Div = 100 Micro Sec, V/Div = 100 mV
+		Output is a amplitude modulated wave that shows an envelope graph function
+		peak-to-peak = 1.161 ms -> f = 861.326442722 Hz
+
+
